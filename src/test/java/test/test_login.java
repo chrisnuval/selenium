@@ -30,5 +30,12 @@ public class test_login extends initialize{
 		loginPage.goToRegistrationPage();
 		regPage.waitForRegistrationLinks();
 	}
+	
+	@Test
+	public void testSupportedLanguages() throws Exception{
+		loginPage loginPage = new loginPage(driver);
+		loginPage.changeLanguageToLithuanian();
+		
+	}
 
 }
